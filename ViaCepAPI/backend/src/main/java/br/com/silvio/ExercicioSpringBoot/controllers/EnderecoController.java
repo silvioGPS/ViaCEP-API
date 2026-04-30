@@ -5,17 +5,15 @@ import br.com.silvio.ExercicioSpringBoot.handlers.CepInvalidationException;
 import br.com.silvio.ExercicioSpringBoot.handlers.MethodNotAllowed;
 import br.com.silvio.ExercicioSpringBoot.models.Endereco;
 import br.com.silvio.ExercicioSpringBoot.services.ViaCepService;
-import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.HashMap;
-import java.util.Map;
+
 
 @RestController
 @RequestMapping("/enderecos")
+@CrossOrigin(origins = "http://localhost:5173")
 public class EnderecoController {
 
     @Autowired
