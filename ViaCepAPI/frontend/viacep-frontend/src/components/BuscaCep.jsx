@@ -48,10 +48,10 @@ export default function BuscaCep() {
   return (
     <div className="card">
       <div className="card-header">
-        <div className="logo">📮</div>
+        <div className="logo">🏠</div>
         <div>
-          <h1>Consulta de CEP</h1>
-          <p className="subtitle">Powered by ViaCEP + Spring Boot</p>
+          <h1>Consulta CEP</h1>
+          <p className="subtitle">Busque endereços por CEP</p>
         </div>
       </div>
 
@@ -91,7 +91,7 @@ export default function BuscaCep() {
 
           {/* Endereço */}
           <div className="section">
-            <h2 className="section-title">Endereço</h2>
+            <h2 className="section-title">🏠 Endereço</h2>
             <div className="grid-2">
               <Campo label="Logradouro" valor={endereco.logradouro} />
               <Campo label="Complemento" valor={endereco.complemento} />
@@ -102,7 +102,7 @@ export default function BuscaCep() {
 
           {/* Localização */}
           <div className="section">
-            <h2 className="section-title">Localização</h2>
+            <h2 className="section-title">📍 Localização</h2>
             <div className="grid-3">
               <Campo label="Cidade" valor={endereco.localidade} destaque />
               <Campo label="Estado" valor={endereco.estado} destaque />
@@ -113,7 +113,7 @@ export default function BuscaCep() {
 
           {/* Dados técnicos */}
           <div className="section">
-            <h2 className="section-title">Dados técnicos</h2>
+            <h2 className="section-title">⚙️ Dados técnicos</h2>
             <div className="grid-3">
               <Campo label="IBGE" valor={endereco.ibge} mono />
               {endereco.gia > 0 && <Campo label="GIA" valor={endereco.gia} mono />}
